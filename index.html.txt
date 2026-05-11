@@ -1,6 +1,62 @@
-<section class="hero" id="home">
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:15px;
+  margin-top:20px;
+}
+.gallery img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border-radius:8px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}<section class="hero" id="home">
   <h1>Powering Security<br> & Smart Solutions</h1>
   <p>Solar • CCTV • Smart Security • Hospital Equipment • Gadgets</p>
-  <a class="btn" href="tel:+2349029021956">Call Now</a>
-  <a class="btn" href="https://wa.me/2349029021956">WhatsApp</a>
+ form{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  margin-top:15px;
+}
+form input, form textarea{
+  padding:10px;
+  border-radius:5px;
+  border:1px solid #ccc;
+  font-size:16px;
+}
+form button{
+  background:#F39C12;
+  color:white;
+  padding:12px;
+  border:none;
+  border-radius:5px;
+  font-size:16px;
+  cursor:pointer;<section id="projects">
+  <h2>Our Projects</h2>
+  <div class="gallery">
+    <img src="https://images.pexels.com/photos/9875441/pexels-photo-9875441.jpeg" alt="Solar Installation">
+    <img src="https://images.pexels.com/photos/430208/pexels-photo-430208.jpeg" alt="CCTV Installation">
+    <img src="https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg" alt="Security Door">
+    <img src="https://images.pexels.com/photos/7659576/pexels-photo-7659576.jpeg" alt="Equipment Maintenance">
+  </div>
+</section>
+} <section id="contact">
+  <div class="contact card">
+    <h2>Contact Us</h2>
+    <p>Fill this form and we will contact you quickly.</p>
+
+    <form action="https://formsubmit.co/ojoekundayo@rocketmail.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="tel" name="phone" placeholder="Your Phone Number" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+      <input type="hidden" name="_captcha" value="false">
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p>📞 <a href="tel:+2349029021956">+234 902 902 1956</a></p>
+    <p>💬 <a href="https://wa.me/2349029021956">Chat on WhatsApp</a></p>
+  </div>
 </section>
